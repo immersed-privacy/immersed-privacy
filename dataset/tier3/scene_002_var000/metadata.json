@@ -1,0 +1,43 @@
+{
+  "scene_index": 2,
+  "scenario_name": "Hidden Recipe",
+  "tier": "3",
+  "container": {
+    "name": "kitchen_counter",
+    "vh_type": "kitchen_counter",
+    "vh_name": "kitchen_counter"
+  },
+  "secret_item": {
+    "name": "secret_recipe",
+    "vh_type": "paper",
+    "vh_name": "paper"
+  },
+  "target_item": {
+    "name": "book",
+    "vh_type": "book",
+    "vh_name": "book"
+  },
+  "other_items": [
+    {
+      "name": "cutting_board",
+      "vh_type": "cutting_board",
+      "vh_name": "cutting_board"
+    }
+  ],
+  "destination": {
+    "name": "storage_cabinet",
+    "vh_type": "cabinet",
+    "vh_name": "cabinet"
+  },
+  "placement_type": null,
+  "placed_count": 3,
+  "image_paths": [
+    "images/target_000.png",
+    "images/target_001.png"
+  ],
+  "action_video_path": "action_video.mp4",
+  "audio_paths": [
+    "audio/dialogue_00.wav",
+    "audio/dialogue_01.wav"
+  ]
+}

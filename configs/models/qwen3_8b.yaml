@@ -1,0 +1,14 @@
+# configs/models/qwen3_8b.yaml — Qwen3-8B via in-process vLLM
+#
+# Useful as an LLM-as-judge candidate model.
+
+backend_type: "vllm_local"
+model_name: "Qwen/Qwen3-8B"
+max_tokens: 1024
+temperature: 0.0
+tensor_parallel_size: 1
+max_model_len: 8192
+gpu_memory_utilization: 0.9
+trust_remote_code: true
+dtype: "auto"
+supports_audio: false

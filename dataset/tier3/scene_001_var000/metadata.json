@@ -1,0 +1,48 @@
+{
+  "scene_index": 1,
+  "scenario_name": "Birthday Surprise",
+  "tier": "3",
+  "container": {
+    "name": "coffee_table",
+    "vh_type": "coffee_table",
+    "vh_name": "coffee_table"
+  },
+  "secret_item": {
+    "name": "concert_tickets",
+    "vh_type": "ticket",
+    "vh_name": "ticket"
+  },
+  "target_item": {
+    "name": "book",
+    "vh_type": "book",
+    "vh_name": "book"
+  },
+  "other_items": [
+    {
+      "name": "remote_control",
+      "vh_type": "remote_control",
+      "vh_name": "remote_control"
+    },
+    {
+      "name": "magazine",
+      "vh_type": "magazine",
+      "vh_name": "magazine"
+    }
+  ],
+  "destination": {
+    "name": "bookshelf",
+    "vh_type": "bookshelf",
+    "vh_name": "bookshelf"
+  },
+  "placement_type": null,
+  "placed_count": 4,
+  "image_paths": [
+    "images/target_000.png",
+    "images/target_001.png"
+  ],
+  "action_video_path": "action_video.mp4",
+  "audio_paths": [
+    "audio/dialogue_00.wav",
+    "audio/dialogue_01.wav"
+  ]
+}

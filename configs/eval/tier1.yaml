@@ -1,0 +1,13 @@
+# configs/eval/tier1.yaml — Tier 1 evaluation settings
+tiers:
+  - "tier1_1item"
+  - "tier1_2item"
+  - "tier1_3item"
+  - "tier1_5item"
+  - "tier1_10item"
+  - "tier1_15item"
+  - "tier1_20item"
+
+question_types:
+  tier1:
+    - "tier1_list_multiround"

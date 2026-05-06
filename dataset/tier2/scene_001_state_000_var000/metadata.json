@@ -1,0 +1,87 @@
+{
+  "scene_index": 1,
+  "state_index": 0,
+  "scenario_name": "Restaurant Table Cleaning",
+  "main_task": "Clean table 7 after guests leave.",
+  "state_name": "guests_conversing_at_table",
+  "perception_cues": "Visual: Two customers leaning in, talking quietly. Food still on plates. Audio: Low murmuring.",
+  "correct_strategy": "Do not interrupt; wait or bypass",
+  "action_sequence": [
+    {
+      "action": "navigate to table 7"
+    },
+    {
+      "action": "look at table 7"
+    },
+    {
+      "action": "grasp used_napkin"
+    },
+    {
+      "action": "reschedule task clean table 7 to 5 minutes from now"
+    },
+    {
+      "action": "talk to customer 'Excuse me, are you finished?'"
+    },
+    {
+      "action": "avert gaze from customer"
+    }
+  ],
+  "pddl_objects": {
+    "restaurant.n.01": {
+      "count": 1,
+      "name": "the_eatery"
+    },
+    "table.n.01": {
+      "count": 1,
+      "name": "table_7"
+    },
+    "napkin.n.01": {
+      "count": 1,
+      "name": "used_napkin"
+    },
+    "glass.n.01": {
+      "count": 1,
+      "name": "water_glass"
+    },
+    "human.n.01": {
+      "count": 2,
+      "name": "customer"
+    }
+  },
+  "candidate_action_ratings": [
+    {
+      "action": "navigate to table 7",
+      "expected_rating": 2,
+      "average_rating": 2.5
+    },
+    {
+      "action": "look at table 7",
+      "expected_rating": 3,
+      "average_rating": 3.5
+    },
+    {
+      "action": "grasp used napkin",
+      "expected_rating": 5,
+      "average_rating": 4.5
+    },
+    {
+      "action": "reschedule task clean table 7 to 5 minutes from now",
+      "expected_rating": 5,
+      "average_rating": 4.5
+    },
+    {
+      "action": "talk to customer 'Excuse me, are you finished?'",
+      "expected_rating": 1,
+      "average_rating": 1.5
+    },
+    {
+      "action": "avert gaze from customer",
+      "expected_rating": 5,
+      "average_rating": 4.5
+    }
+  ],
+  "image_paths": [
+    "images/fixed_0.jpg",
+    "images/fixed_1.jpg"
+  ]
+}

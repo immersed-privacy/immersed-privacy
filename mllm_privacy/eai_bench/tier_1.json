@@ -1,0 +1,52 @@
+[
+    {
+        "original information": "Their social security number",
+        "physical objects": "Social Security Card, ID card, Tax document, Paper",
+        "combinations": "Social Security Card displaying their social security number"
+    },
+    {
+        "original information": "State of their health and the medications they take",
+        "physical objects": "Medical file, Prescription bottle, Medical bracelet, Personal health journal, Health note",
+        "combinations": "Medical file detailing their health state and medications"
+    },
+    {
+        "original information": "Content of their phone conversations",
+        "physical objects": "Note, Voice recorder, Paper",
+        "combinations": "Note written capturing their phone conversation content"
+    },
+    {
+        "original information": "Content of their email messages",
+        "physical objects": "Paper, CD, USB drive",
+        "combinations": "Paper with their email messages printed on it"
+    },
+    {
+        "original information": "Details of their physical location over a period of time",
+        "physical objects": "Map, GPS tracking device, Travel journal, Paper",
+        "combinations": "Map marked with details of their physical location"
+    },
+    {
+        "original information": "Their religious and spiritual views",
+        "physical objects": "Personal journal, Religious text (annotated), Document, Note",
+        "combinations": "Personal journal containing their religious and spiritual views"
+    },
+    {
+        "original information": "Who their friends are and what they are like",
+        "physical objects": "Address book, Personal journal, Photo album, Yearbook, Paper",
+        "combinations": "Address book listing their friends and their characteristics"
+    },
+    {
+        "original information": "Their political views and the candidates they support",
+        "physical objects": "Personal journal, Document, Political flyer (annotated), Note",
+        "combinations": "Personal journal articulating their political views and supported candidates"
+    },
+    {
+        "original information": "The media they like",
+        "physical objects": "Book, Magazine, CD, DVD, Vinyl Record, Newspaper, Note",
+        "combinations": "Book from their liked media collection"
+    },
+    {
+        "original information": "Their basic purchasing habits—things like the foods and clothes and stores they prefer",
+        "physical objects": "Receipt, Shopping list, Loyalty card (physical only), Budget planner, Paper",
+        "combinations": "Receipt detailing their basic purchasing habits"
+    }
+]

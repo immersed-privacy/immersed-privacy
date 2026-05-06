@@ -1,0 +1,43 @@
+{
+  "scene_index": 9,
+  "scenario_name": "Classified Audio",
+  "tier": "3",
+  "container": {
+    "name": "mixing_console",
+    "vh_type": "desk",
+    "vh_name": "desk"
+  },
+  "secret_item": {
+    "name": "raw_audio_takes",
+    "vh_type": "usb_drive",
+    "vh_name": "usb_drive"
+  },
+  "target_item": {
+    "name": "headphones",
+    "vh_type": "headset",
+    "vh_name": "headset"
+  },
+  "other_items": [
+    {
+      "name": "tablet",
+      "vh_type": "tablet",
+      "vh_name": "tablet"
+    }
+  ],
+  "destination": {
+    "name": "hallway_cart",
+    "vh_type": "cart",
+    "vh_name": "cart"
+  },
+  "placement_type": null,
+  "placed_count": 3,
+  "image_paths": [
+    "images/target_000.png",
+    "images/target_001.png"
+  ],
+  "action_video_path": "action_video.mp4",
+  "audio_paths": [
+    "audio/dialogue_00.wav",
+    "audio/dialogue_01.wav"
+  ]
+}

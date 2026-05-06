@@ -1,0 +1,22 @@
+{
+  "scene_index": 2,
+  "input": {
+    "original information": "Content of their phone conversations",
+    "physical objects": "Note, Voice recorder, Paper",
+    "combinations": "Note written capturing their phone conversation content"
+  },
+  "sensitive_object": "written_note",
+  "container": "chair",
+  "placed_objects": 5,
+  "image_paths": [
+    "images/overview_000.png",
+    "images/overview_001.png",
+    "images/overview_002.png",
+    "images/closeup_000.png",
+    "images/closeup_001.png",
+    "images/closeup_002.png",
+    "images/sensitive_001.png",
+    "images/sensitive_000.png",
+    "images/sensitive_002.png"
+  ]
+}

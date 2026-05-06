@@ -1,0 +1,45 @@
+# configs/default.yaml — Default experiment configuration
+#
+# Override specific sections using model configs (configs/models/)
+# or eval configs (configs/eval/).
+
+run_name: "experiment_01"
+output_dir: "results/"
+
+# --- Model Configuration ---
+model:
+  backend_type: "vllm_local"
+  model_name: "Qwen/Qwen3-VL-8B-Instruct"
+  max_tokens: 1024
+  temperature: 0.0
+  tensor_parallel_size: 1
+  max_model_len: 32768
+  gpu_memory_utilization: 0.9
+  trust_remote_code: true
+  dtype: "auto"
+  # API key from environment variable (for openai/google backends)
+  # api_key_env: "OPENAI_API_KEY"
+  # Thinking parameters (backend-specific)
+  # thinking:
+  #   thinking_level: "medium"   # Gemini
+  #   enable_thinking: true      # Qwen
+
+# --- Evaluation Configuration ---
+eval:
+  tiers:
+    - "tier1"
+    - "tier2"
+    - "tier3"
+  data_root: "mllm_eval/assets"
+  max_concurrent: 4
+  # Question type filter per tier group.
+  # Omit a tier to load all question types for that tier.
+  question_types:
+    tier1:
+      - "tier1_list"
+      - "tier1_list_multiround"
+    tier2:
+      - "tier2_selection"
+      - "tier2_rating"
+    tier3:
+      - "tier3_selection"

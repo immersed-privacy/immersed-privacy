@@ -1,0 +1,13 @@
+# configs/models/gpt_4o_mini.yaml — GPT-4o-mini via OpenAI API
+#
+# Setup:
+#   pip install openai
+#   export OPENAI_API_KEY="your-api-key"
+
+backend_type: "openai"
+model_name: "gpt-4o-mini-2024-07-18"
+api_key_env: "OPENAI_API_KEY"
+max_tokens: 4096
+temperature: 0.0
+supports_audio: false
+supports_video: false

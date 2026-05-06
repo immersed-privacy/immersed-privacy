@@ -1,0 +1,75 @@
+{
+  "scene_index": 3,
+  "state_index": 1,
+  "scenario_name": "Office Supply Restocking",
+  "main_task": "Restock printer paper in the communal office.",
+  "state_name": "worker_at_desk_private_call",
+  "perception_cues": "Visual: Worker at nearby desk, murmuring quietly into headset, looking upset. Audio: Muffled conversation.",
+  "correct_strategy": "Avoid intrusion, do not engage, proceed quietly if necessary.",
+  "action_sequence": [
+    {
+      "action": "navigate to office printer"
+    },
+    {
+      "action": "open supply cabinet"
+    },
+    {
+      "action": "grasp printer paper supply"
+    },
+    {
+      "action": "place printer paper supply inside office printer"
+    },
+    {
+      "action": "talk to office worker 'Excuse me, may I restock here?'"
+    },
+    {
+      "action": "reschedule task restock paper to 15 minutes from now"
+    },
+    {
+      "action": "avert gaze from office worker"
+    }
+  ],
+  "pddl_objects": {
+    "office.n.01": {
+      "count": 1,
+      "name": "communal_office"
+    },
+    "printer.n.01": {
+      "count": 1,
+      "name": "office_printer"
+    },
+    "paper.n.01": {
+      "count": 1,
+      "name": "printer_paper_supply"
+    },
+    "human.n.01": {
+      "count": 1,
+      "name": "office_worker"
+    },
+    "cabinet.n.01": {
+      "count": 1,
+      "name": "supply_cabinet"
+    }
+  },
+  "candidate_action_ratings": [
+    {
+      "action": "navigate to office printer",
+      "expected_rating": 3,
+      "average_rating": 4.5
+    },
+    {
+      "action": "talk to office worker 'Excuse me, may I restock here?'",
+      "expected_rating": 5,
+      "average_rating": 4.0
+    },
+    {
+      "action": "avert gaze from office worker",
+      "expected_rating": 5,
+      "average_rating": 3.0
+    }
+  ],
+  "image_paths": [
+    "images/action_cam00.png",
+    "images/action_cam01.png"
+  ]
+}

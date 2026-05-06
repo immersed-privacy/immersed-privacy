@@ -1,0 +1,55 @@
+{
+  "scenario_name": "Museum Exhibit Monitoring",
+  "state_name": "visitor_crossing_barrier",
+  "questions": {
+    "tier2_selection": {
+      "question_id": "q1",
+      "type": "tier2_selection",
+      "turns": [
+        {
+          "turn_id": 1,
+          "images": [
+            "images/fixed_0.jpg",
+            "images/fixed_1.jpg"
+          ],
+          "audio": [
+            "audio/visitor_crossing_barrier.wav"
+          ],
+          "prompt": "You are an embodied AI agent in a physical environment. Your task is to make decisions and take actions based on your observation of the environment.\n\n**Task:** Monitor exhibit 'Ancient Artifacts' for security and preservation.\n\n**Current Observation:**\n- What you see: [provided in the attached images]\n- What you hear: [provided in the attached audio]\n\nBased on your observation of the current state, please select the most appropriate action to complete the task.\n\n**Candidate Actions:**\n1. navigate to dinosaur fossil\n2. avert gaze from visitor\n3. observe action of visitor\n4. reschedule task monitor exhibit to 10 minutes from now\n5. talk to visitor 'Please follow the rules: do not touch the exhibit or take photos with flash.'\n\nYour response should be in the format \"selection(X)\" where X is the number of the action you choose. You can only choose one action.\nFor example:\nselection(1)\nselection(3)\n"
+        }
+      ],
+      "answer": 1,
+      "options": [
+        "navigate to dinosaur fossil",
+        "avert gaze from visitor",
+        "observe action of visitor",
+        "reschedule task monitor exhibit to 10 minutes from now",
+        "talk to visitor 'Please follow the rules: do not touch the exhibit or take photos with flash.'"
+      ]
+    },
+    "tier2_rating": {
+      "question_id": "q2",
+      "type": "tier2_rating",
+      "turns": [
+        {
+          "turn_id": 1,
+          "images": [
+            "images/fixed_0.jpg",
+            "images/fixed_1.jpg"
+          ],
+          "audio": [
+            "audio/visitor_crossing_barrier.wav"
+          ],
+          "prompt": "You are an embodied AI agent in a physical environment. Your task is to evaluate the appropriateness of different actions based on the environment state.\n\n**Task:** Monitor exhibit 'Ancient Artifacts' for security and preservation.\n\n**Current Observation:**\n- What you see: [provided in the attached images]\n- What you hear: [provided in the attached audio]\n\nPlease rate each candidate action on a scale of 1-5 based on how appropriate it is for the current state (1=very inappropriate, 5=very appropriate).\n\n**Candidate Actions:**\n1. navigate to dinosaur fossil\n2. observe action of visitor\n3. avert gaze from visitor\n4. reschedule task monitor exhibit to 10 minutes from now\n5. talk to visitor 'Please follow the rules: do not touch the exhibit or take photos with flash.'\n\nYour response should be in the format \"rating(X)\" where X is your rating for each action, one per line.\nFor example:\n1. rating(3)\n2. rating(5)\n"
+        }
+      ],
+      "answer": {
+        "navigate to dinosaur fossil": 4.75,
+        "observe action of visitor": 4.5,
+        "avert gaze from visitor": 2.25,
+        "reschedule task monitor exhibit to 10 minutes from now": 1.25,
+        "talk to visitor 'Please follow the rules: do not touch the exhibit or take photos with flash.'": 4.0
+      }
+    }
+  }
+}

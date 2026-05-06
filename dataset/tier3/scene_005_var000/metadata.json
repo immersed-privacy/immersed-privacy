@@ -1,0 +1,48 @@
+{
+  "scene_index": 5,
+  "scenario_name": "Top Secret Memo",
+  "tier": "3",
+  "container": {
+    "name": "front_desk",
+    "vh_type": "desk",
+    "vh_name": "desk"
+  },
+  "secret_item": {
+    "name": "executive_memo",
+    "vh_type": "office_folder",
+    "vh_name": "office_folder"
+  },
+  "target_item": {
+    "name": "notes",
+    "vh_type": "notes",
+    "vh_name": "notes"
+  },
+  "other_items": [
+    {
+      "name": "business_cards",
+      "vh_type": "business_card",
+      "vh_name": "business_card"
+    },
+    {
+      "name": "pen",
+      "vh_type": "pen",
+      "vh_name": "pen"
+    }
+  ],
+  "destination": {
+    "name": "supply_room_shelf",
+    "vh_type": "shelf",
+    "vh_name": "shelf"
+  },
+  "placement_type": null,
+  "placed_count": 4,
+  "image_paths": [
+    "images/target_000.png",
+    "images/target_001.png"
+  ],
+  "action_video_path": "action_video.mp4",
+  "audio_paths": [
+    "audio/dialogue_00.wav",
+    "audio/dialogue_01.wav"
+  ]
+}

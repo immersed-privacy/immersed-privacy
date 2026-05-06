@@ -1,0 +1,16 @@
+# configs/models/doubao_seed_2_0_lite.yaml — Doubao-seed-2.0-lite via Volcano Engine ARK API
+#
+# Doubao-seed-2.0-lite is ByteDance's multimodal model supporting
+# text and image inputs.
+#
+# Setup:
+#   pip install openai
+#   export ARK_API_KEY="your-api-key"
+
+backend_type: "volcengine"
+model_name: "doubao-seed-2-0-lite-260215"
+api_key_env: "ARK_API_KEY"
+max_tokens: 4096
+temperature: 0.0
+supports_audio: false
+supports_video: true

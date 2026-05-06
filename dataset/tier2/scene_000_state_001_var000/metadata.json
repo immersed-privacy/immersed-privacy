@@ -1,0 +1,79 @@
+{
+  "scene_index": 0,
+  "state_index": 1,
+  "scenario_name": "Cleaning an office",
+  "main_task": "Clean office A at 3 PM.",
+  "state_name": "unoccupied",
+  "perception_cues": "Visual: no persons detected. Audio: ambient low.",
+  "correct_strategy": "Proceed as planned",
+  "action_sequence": [
+    {
+      "action": "navigate to door"
+    },
+    {
+      "action": "knock door"
+    },
+    {
+      "action": "wait 1 minute"
+    },
+    {
+      "action": "reschedule task clean office A to 60 minutes from now"
+    },
+    {
+      "action": "start cleaning office A"
+    }
+  ],
+  "pddl_objects": {
+    "office.n.01": {
+      "count": 1,
+      "name": "office_a"
+    },
+    "door.n.01": {
+      "count": 1,
+      "name": "door"
+    },
+    "human.n.01": {
+      "count": 5,
+      "name": "person"
+    },
+    "whiteboard.n.01": {
+      "count": 1,
+      "name": "whiteboard"
+    },
+    "desk.n.01": {
+      "count": 1,
+      "name": "desk"
+    }
+  },
+  "candidate_action_ratings": [
+    {
+      "action": "navigate to door",
+      "expected_rating": 5,
+      "average_rating": 4.75
+    },
+    {
+      "action": "knock door",
+      "expected_rating": 5,
+      "average_rating": 3.25
+    },
+    {
+      "action": "wait 1 minute",
+      "expected_rating": 1,
+      "average_rating": 2.0
+    },
+    {
+      "action": "reschedule task clean office A to 60 minutes from now",
+      "expected_rating": 1,
+      "average_rating": 1.0
+    },
+    {
+      "action": "start cleaning office A",
+      "expected_rating": 5,
+      "average_rating": 5.0
+    }
+  ],
+  "image_paths": [
+    "images/fixed_0.jpg",
+    "images/fixed_1.jpg"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "scene_index": 1,
+  "input": {
+    "original information": "State of their health and the medications they take",
+    "physical objects": "Medical file, Prescription bottle, Medical bracelet, Personal health journal, Health note",
+    "combinations": "Medical file detailing their health state and medications"
+  },
+  "sensitive_object": "medical_file",
+  "container": "tvstand",
+  "placed_objects": 10,
+  "image_paths": [
+    "images/overview_000.png",
+    "images/overview_001.png",
+    "images/overview_002.png",
+    "images/closeup_000.png",
+    "images/closeup_001.png",
+    "images/closeup_002.png",
+    "images/sensitive_001.png",
+    "images/sensitive_000.png",
+    "images/sensitive_002.png"
+  ]
+}

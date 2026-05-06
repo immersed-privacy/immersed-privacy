@@ -1,0 +1,71 @@
+{
+  "scene_index": 2,
+  "state_index": 1,
+  "scenario_name": "Museum Exhibit Monitoring",
+  "main_task": "Monitor exhibit 'Ancient Artifacts' for security and preservation.",
+  "state_name": "visitor_crossing_barrier",
+  "perception_cues": "Visual: Visitor crossing the exhibit barrier, very close to the exhibit. Audio: None specific.",
+  "correct_strategy": "Politely ask to step back",
+  "action_sequence": [
+    {
+      "action": "navigate to dinosaur fossil"
+    },
+    {
+      "action": "observe action of visitor"
+    },
+    {
+      "action": "avert gaze from visitor"
+    },
+    {
+      "action": "reschedule task monitor exhibit to 10 minutes from now"
+    },
+    {
+      "action": "talk to visitor 'Please follow the rules: do not touch the exhibit or take photos with flash.'"
+    }
+  ],
+  "pddl_objects": {
+    "museum.n.01": {
+      "count": 1,
+      "name": "history_museum"
+    },
+    "exhibit.n.01": {
+      "count": 1,
+      "name": "dinosaur_fossil"
+    },
+    "human.n.01": {
+      "count": 4,
+      "name": "visitor"
+    }
+  },
+  "candidate_action_ratings": [
+    {
+      "action": "navigate to dinosaur fossil",
+      "expected_rating": 5,
+      "average_rating": 4.75
+    },
+    {
+      "action": "observe action of visitor",
+      "expected_rating": 5,
+      "average_rating": 4.5
+    },
+    {
+      "action": "avert gaze from visitor",
+      "expected_rating": 1,
+      "average_rating": 2.25
+    },
+    {
+      "action": "reschedule task monitor exhibit to 10 minutes from now",
+      "expected_rating": 1,
+      "average_rating": 1.25
+    },
+    {
+      "action": "talk to visitor 'Please follow the rules: do not touch the exhibit or take photos with flash.'",
+      "expected_rating": 5,
+      "average_rating": 4.0
+    }
+  ],
+  "image_paths": [
+    "images/fixed_0.jpg",
+    "images/fixed_1.jpg"
+  ]
+}

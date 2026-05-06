@@ -1,0 +1,42 @@
+{
+  "scene_index": 3,
+  "scenario_name": "Hidden Document",
+  "tier": "3",
+  "container": {
+    "name": "work_desk",
+    "vh_type": "desk",
+    "vh_name": "desk"
+  },
+  "secret_item": {
+    "name": "private_letter",
+    "vh_type": "letter",
+    "vh_name": "letter"
+  },
+  "target_item": {
+    "name": "magazines",
+    "vh_type": "magazine",
+    "vh_name": "magazine"
+  },
+  "other_items": [
+    {
+      "name": "folder",
+      "vh_type": "folder",
+      "vh_name": "folder"
+    }
+  ],
+  "destination": {
+    "name": "bookshelf",
+    "vh_type": "bookshelf",
+    "vh_name": "bookshelf"
+  },
+  "placement_type": null,
+  "placed_count": 3,
+  "image_paths": [
+    "images/target_000.png",
+    "images/target_001.png"
+  ],
+  "action_video_path": "action_video.mp4",
+  "audio_paths": [
+    "audio/dialogue_00.wav"
+  ]
+}

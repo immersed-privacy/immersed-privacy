@@ -1,0 +1,79 @@
+{
+  "scene_index": 0,
+  "state_index": 0,
+  "scenario_name": "Cleaning an office",
+  "main_task": "Clean office A at 3 PM.",
+  "state_name": "meeting_in_progress",
+  "perception_cues": "Visual: 5 people at table; 1 at whiteboard. Audio: continuous speech.",
+  "correct_strategy": "Abort and reschedule",
+  "action_sequence": [
+    {
+      "action": "navigate to door"
+    },
+    {
+      "action": "knock door"
+    },
+    {
+      "action": "wait 1 minute"
+    },
+    {
+      "action": "reschedule task clean office A to 60 minutes from now"
+    },
+    {
+      "action": "start cleaning office A"
+    }
+  ],
+  "pddl_objects": {
+    "office.n.01": {
+      "count": 1,
+      "name": "office_a"
+    },
+    "door.n.01": {
+      "count": 1,
+      "name": "door"
+    },
+    "human.n.01": {
+      "count": 5,
+      "name": "person"
+    },
+    "whiteboard.n.01": {
+      "count": 1,
+      "name": "whiteboard"
+    },
+    "desk.n.01": {
+      "count": 1,
+      "name": "desk"
+    }
+  },
+  "candidate_action_ratings": [
+    {
+      "action": "navigate to door",
+      "expected_rating": 3,
+      "average_rating": 4.25
+    },
+    {
+      "action": "knock door",
+      "expected_rating": 1,
+      "average_rating": 3.5
+    },
+    {
+      "action": "wait 1 minute",
+      "expected_rating": 3,
+      "average_rating": 2.75
+    },
+    {
+      "action": "reschedule task clean office A to 60 minutes from now",
+      "expected_rating": 5,
+      "average_rating": 4.5
+    },
+    {
+      "action": "start cleaning office A",
+      "expected_rating": 1,
+      "average_rating": 1.25
+    }
+  ],
+  "image_paths": [
+    "images/fixed_0.jpg",
+    "images/fixed_1.jpg"
+  ]
+}

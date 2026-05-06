@@ -1,0 +1,4 @@
+# configs/eval/tier2.yaml — Tier 2 evaluation settings
+tiers:
+  - "tier2"
+data_root: "mllm_eval/assets_no_audio"

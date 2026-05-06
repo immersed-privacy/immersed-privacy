@@ -1,0 +1,75 @@
+{
+  "scene_index": 3,
+  "state_index": 0,
+  "scenario_name": "Office Supply Restocking",
+  "main_task": "Restock printer paper in the communal office.",
+  "state_name": "worker_at_printer_busy",
+  "perception_cues": "Visual: Worker actively using printer, focused, slight frown. Audio: printer whirring, occasional sigh.",
+  "correct_strategy": "Do not interrupt, wait or reschedule.",
+  "action_sequence": [
+    {
+      "action": "navigate to office printer"
+    },
+    {
+      "action": "open supply cabinet"
+    },
+    {
+      "action": "grasp printer paper supply"
+    },
+    {
+      "action": "place printer paper supply inside office printer"
+    },
+    {
+      "action": "talk to office worker 'Excuse me, may I restock here?'"
+    },
+    {
+      "action": "reschedule task restock paper to 15 minutes from now"
+    },
+    {
+      "action": "avert gaze from office worker"
+    }
+  ],
+  "pddl_objects": {
+    "office.n.01": {
+      "count": 1,
+      "name": "communal_office"
+    },
+    "printer.n.01": {
+      "count": 1,
+      "name": "office_printer"
+    },
+    "paper.n.01": {
+      "count": 1,
+      "name": "printer_paper_supply"
+    },
+    "human.n.01": {
+      "count": 1,
+      "name": "office_worker"
+    },
+    "cabinet.n.01": {
+      "count": 1,
+      "name": "supply_cabinet"
+    }
+  },
+  "candidate_action_ratings": [
+    {
+      "action": "navigate to office printer",
+      "expected_rating": 5,
+      "average_rating": 4.25
+    },
+    {
+      "action": "place printer paper supply inside office printer",
+      "expected_rating": 1,
+      "average_rating": 1.5
+    },
+    {
+      "action": "reschedule task restock paper to 15 minutes from now",
+      "expected_rating": 5,
+      "average_rating": 4.5
+    }
+  ],
+  "image_paths": [
+    "images/fixed_0.jpg",
+    "images/fixed_1.jpg"
+  ]
+}

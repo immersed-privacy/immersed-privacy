@@ -1,0 +1,3 @@
+# configs/eval/tier2.yaml — Tier 2 evaluation settings
+tiers:
+  - "tier2"

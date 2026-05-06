@@ -1,0 +1,3 @@
+# configs/eval/tier3.yaml — Tier 3 evaluation settings
+tiers:
+  - "tier3"

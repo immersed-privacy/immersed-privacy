@@ -1,0 +1,13 @@
+# configs/models/gpt_5_4.yaml — GPT-5.4 via OpenAI API
+#
+# Setup:
+#   pip install openai
+#   export OPENAI_API_KEY="your-api-key"
+
+backend_type: "openai"
+model_name: "gpt-5.4"
+api_key_env: "OPENAI_API_KEY"
+max_tokens: 8192
+temperature: 0.0
+supports_audio: true
+supports_video: true

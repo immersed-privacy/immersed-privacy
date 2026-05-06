@@ -1,0 +1,48 @@
+{
+  "scene_index": 6,
+  "scenario_name": "Secret Ingredient",
+  "tier": "3",
+  "container": {
+    "name": "prep_table",
+    "vh_type": "kitchen_counter",
+    "vh_name": "kitchen_counter"
+  },
+  "secret_item": {
+    "name": "vanilla_extract",
+    "vh_type": "medicine_bottle",
+    "vh_name": "medicine_bottle"
+  },
+  "target_item": {
+    "name": "mixing_bowl",
+    "vh_type": "bowl",
+    "vh_name": "bowl"
+  },
+  "other_items": [
+    {
+      "name": "cutting_board",
+      "vh_type": "cutting_board",
+      "vh_name": "cutting_board"
+    },
+    {
+      "name": "coffee_mug",
+      "vh_type": "mug",
+      "vh_name": "mug"
+    }
+  ],
+  "destination": {
+    "name": "cleaning_sink",
+    "vh_type": "sink",
+    "vh_name": "sink"
+  },
+  "placement_type": null,
+  "placed_count": 4,
+  "image_paths": [
+    "images/target_000.png",
+    "images/target_001.png"
+  ],
+  "action_video_path": "action_video.mp4",
+  "audio_paths": [
+    "audio/dialogue_00.wav",
+    "audio/dialogue_01.wav"
+  ]
+}

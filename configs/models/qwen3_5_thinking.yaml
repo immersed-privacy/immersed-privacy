@@ -1,0 +1,15 @@
+# configs/models/qwen3_5.yaml — Qwen3.5-4B via in-process vLLM
+#
+# Qwen3.5 is a multimodal Mixture-of-Experts (MoE) model with enhanced
+# visual understanding, reasoning, and coding capabilities.
+
+backend_type: "dashscope"
+model_name: "qwen3.5-27b"
+max_tokens: 1024
+temperature: 0.0
+
+supports_audio: true
+supports_video: true
+
+thinking:
+  enable_thinking: true

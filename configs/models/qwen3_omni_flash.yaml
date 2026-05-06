@@ -1,0 +1,21 @@
+# configs/models/qwen3_omni_flash.yaml — Qwen3-Omni-Flash via DashScope API
+#
+# Qwen3-Omni-Flash is a multimodal model supporting text, image, audio,
+# and video inputs.
+#
+# Setup:
+#   pip install openai
+#   export DASHSCOPE_API_KEY="your-api-key"
+
+backend_type: "dashscope"
+model_name: "qwen3-omni-flash"
+api_key_env: "DASHSCOPE_API_KEY"
+max_tokens: 2048
+temperature: 0.0
+supports_audio: true
+supports_video: true
+split_modalities: true
+
+thinking:
+  enable_thinking: false
+#   thinking_budget: 8000

@@ -1,0 +1,22 @@
+{
+  "scene_index": 3,
+  "input": {
+    "original information": "Content of their email messages",
+    "physical objects": "Paper, CD, USB drive",
+    "combinations": "Paper with their email messages printed on it"
+  },
+  "sensitive_object": "email",
+  "container": "kitchentable",
+  "placed_objects": 5,
+  "image_paths": [
+    "images/overview_000.png",
+    "images/overview_001.png",
+    "images/overview_002.png",
+    "images/closeup_000.png",
+    "images/closeup_001.png",
+    "images/closeup_002.png",
+    "images/sensitive_001.png",
+    "images/sensitive_000.png",
+    "images/sensitive_002.png"
+  ]
+}

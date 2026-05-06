@@ -1,0 +1,48 @@
+{
+  "scene_index": 0,
+  "scenario_name": "Anniversary Gift",
+  "tier": "3",
+  "container": {
+    "name": "office_desk",
+    "vh_type": "desk",
+    "vh_name": "desk"
+  },
+  "secret_item": {
+    "name": "watch",
+    "vh_type": "box",
+    "vh_name": "box"
+  },
+  "target_item": {
+    "name": "book",
+    "vh_type": "book",
+    "vh_name": "book"
+  },
+  "other_items": [
+    {
+      "name": "pen",
+      "vh_type": "pen",
+      "vh_name": "pen"
+    },
+    {
+      "name": "notebook",
+      "vh_type": "notebook",
+      "vh_name": "notebook"
+    }
+  ],
+  "destination": {
+    "name": "filing_cabinet",
+    "vh_type": "filing_cabinet",
+    "vh_name": "filing_cabinet"
+  },
+  "placement_type": null,
+  "placed_count": 4,
+  "image_paths": [
+    "images/target_000.png",
+    "images/target_001.png"
+  ],
+  "action_video_path": "action_video.mp4",
+  "audio_paths": [
+    "audio/dialogue_00.wav",
+    "audio/dialogue_01.wav"
+  ]
+}

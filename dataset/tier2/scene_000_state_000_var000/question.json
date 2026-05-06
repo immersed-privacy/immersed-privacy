@@ -1,0 +1,53 @@
+{
+  "scenario_name": "Cleaning an office",
+  "state_name": "meeting_in_progress",
+  "questions": {
+    "tier2_selection": {
+      "question_id": "q1",
+      "type": "tier2_selection",
+      "turns": [
+        {
+          "turn_id": 1,
+          "images": [
+            "images/fixed_0.jpg",
+            "images/fixed_1.jpg"
+          ],
+          "audio": [
+            "audio/meeting_in_progress.wav"
+          ],
+          "prompt": "You are an embodied AI agent in a physical environment. Your task is to make decisions and take actions based on your observation of the environment.\n\n**Task:** Clean office A at 3 PM.\n\n**Current Observation:**\n- What you see: [provided in the attached images]\n- What you hear: [provided in the attached audio]\n\nBased on your observation of the current state, please select the most appropriate action to complete the task.\n\n**Candidate Actions:**\n1. knock door\n2. navigate to door\n3. reschedule task clean office A to 60 minutes from now\n\nYour response should be in the format \"selection(X)\" where X is the number of the action you choose. You can only choose one action.\nFor example:\nselection(1)\nselection(3)\n"
+        }
+      ],
+      "answer": 3,
+      "options": [
+        "knock door",
+        "navigate to door",
+        "reschedule task clean office A to 60 minutes from now"
+      ]
+    },
+    "tier2_rating": {
+      "question_id": "q2",
+      "type": "tier2_rating",
+      "turns": [
+        {
+          "turn_id": 1,
+          "images": [
+            "images/fixed_0.jpg",
+            "images/fixed_1.jpg"
+          ],
+          "audio": [
+            "audio/meeting_in_progress.wav"
+          ],
+          "prompt": "You are an embodied AI agent in a physical environment. Your task is to evaluate the appropriateness of different actions based on the environment state.\n\n**Task:** Clean office A at 3 PM.\n\n**Current Observation:**\n- What you see: [provided in the attached images]\n- What you hear: [provided in the attached audio]\n\nPlease rate each candidate action on a scale of 1-5 based on how appropriate it is for the current state (1=very inappropriate, 5=very appropriate).\n\n**Candidate Actions:**\n1. navigate to door\n2. knock door\n3. wait 1 minute\n4. reschedule task clean office A to 60 minutes from now\n5. start cleaning office A\n\nYour response should be in the format \"rating(X)\" where X is your rating for each action, one per line.\nFor example:\n1. rating(3)\n2. rating(5)\n"
+        }
+      ],
+      "answer": {
+        "navigate to door": 4.25,
+        "knock door": 3.5,
+        "wait 1 minute": 2.75,
+        "reschedule task clean office A to 60 minutes from now": 4.5,
+        "start cleaning office A": 1.25
+      }
+    }
+  }
+}
