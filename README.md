@@ -1,5 +1,18 @@
 ## How Far Are VLMs from Privacy Awareness in the Physical World? An Empirical Study
 
+<a href="https://arxiv.org/abs/2605.05340" target="_blank">
+    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-ImmersedPrivacy-red?logo=arxiv&style=for-the-badge" />
+</a>
+<a href="https://immersed-privacy.github.io" target="_blank">
+    <img alt="Website" src="https://img.shields.io/badge/🌎_Homepage-blue.svg?style=for-the-badge" />
+</a>
+<a href="https://github.com/immersed-privacy/immersed-privacy" target="_blank">
+    <img alt="GitHub code" src="https://img.shields.io/badge/💻_Code_GitHub-black.svg?style=for-the-badge" />
+</a>
+<a href="#cite" target="_blank">
+    <img alt="Cite" src="https://img.shields.io/badge/📖_Cite!-lightgrey?style=for-the-badge" />
+</a>
+
 The source code for *How Far Are VLMs from Privacy Awareness in the Physical World? An Empirical Study*. The evaluation framework contains three tiers, each targeting a distinct facet of privacy reasoning:
 
 | Tier | Capability evaluated | Typical input |
@@ -291,3 +304,16 @@ The recommended path during double-blind review is:
 * [`third_party/virtualhome/`](third_party/virtualhome/) contains a **modified** copy of the upstream VirtualHome Python API (added endpoints for our simulator extensions, minor helper tweaks) redistributed under the original MIT license. See [`third_party/virtualhome/LICENSE`](third_party/virtualhome/LICENSE) for the original copyright notice.
 * **Tier 2 audio cues** are sourced from [ear0.com](https://www.ear0.com) and are distributed under the CC0 license by the original platform. The clips have been transcoded to WAV and are included for non-commercial research use; all copyright in the underlying recordings remains with their respective creators.
 * The modified Unity simulator binary will be released upon third-party asset clearance.
+
+## Cite
+
+If you find this repository useful for your research, please consider citing the following paper:
+
+```bibtex
+@article{wang2026far,
+  title={How Far Are VLMs from Privacy Awareness in the Physical World? An Empirical Study},
+  author={Wang, Junran and Shen, Xinjie and Jin, Zehao and Li, Pan},
+  journal={arXiv preprint arXiv:2605.05340},
+  year={2026}
+}
+```
